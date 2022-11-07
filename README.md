@@ -1,13 +1,13 @@
 # Amazon Polly & MetaHumans Sample Project
 
 ## NOTES:<br>
-You have to install Visual Studio 2019<br>
-You have to ahve an active AWS account<br>
-Install cmake 3.18.0.rc1 then run the command line to build the aws sdk.<br>
-Right click Unreal project and select "Build VS project files"<br>
-Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019<br>
-  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
-  PreferredAccessor=VisualStudio<br>
+-- You have to install Visual Studio 2019<br>
+-- You have to have an active AWS account<br>
+-- Install cmake 3.18.0.rc1 then run the command line to build the aws sdk.<br>
+-- Right click Unreal project and select "Build VS project files"<br>
+-- Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019<br>
+--  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
+--  PreferredAccessor=VisualStudio<br>
 
 <br>
 
