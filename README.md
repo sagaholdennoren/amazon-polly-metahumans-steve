@@ -1,5 +1,15 @@
 # Amazon Polly & MetaHumans Sample Project
 
+NOTES:
+You have to install Visual Studio 2019
+You have to ahve an active AWS account
+Install cmake 3.18.0.rc1 then run the command line to build the aws sdk.
+Right click Unreal project and select "Build VS project files"
+Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019
+  [/Script/SourceCodeAccess.SourceCodeAccessSettings]
+  PreferredAccessor=VisualStudio
+
+
 *A sample project combining Epic Games' MetaHuman digital characters with Amazon Polly text-to-speech.*
 
 This Unreal Engine sample project demonstrates how to bring Epic Games' [MetaHuman digital characters](https://www.unrealengine.com/en-US/digital-humans) to life using the Amazon Polly text-to-speech service from AWS. Use this project as a starting point for creating your own Unreal Engine applications that leverage Amazon Polly to give voice to your MetaHumans using one of 16 different English language voices spanning 5 dialects. Or extend this project to use any of Polly's 60+ voices covering 20+ languages and 13+ dialects.
