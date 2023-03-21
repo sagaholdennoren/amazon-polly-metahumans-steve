@@ -1,6 +1,7 @@
 # Amazon Polly & MetaHumans Sample Project
 
 ## NOTES:<br>
+-- This works for Unreal Engine 4.27 "only"<br>
 -- Install Visual Studio 2019 for C++/Games development<br>
 -- You have to have an active AWS account<br>
 -- If using google speech to text then an active google api account<br>
