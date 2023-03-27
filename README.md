@@ -1,15 +1,19 @@
 # Amazon Polly & MetaHumans Sample Project
 
 ## NOTES:<br>
--- You have to install Visual Studio 2019<br>
+-- This works for Unreal Engine 4.27 "only"<br>
+-- Install Visual Studio 2019 for C++/Games development<br>
 -- You have to have an active AWS account<br>
--- If using google speach to text then an active google api account<br>
+-- If using google speech to text then an active google api account<br>
 -- Install cmake 3.18.0.rc1 then run the command line to build the aws sdk.<br>
+-- Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019 like so<br>
+-----  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
+-----  PreferredAccessor=VisualStudio<br>
+-- Save file
 -- Right click Unreal project and select "Build VS project files"<br>
--- Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019<br>
---  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
---  PreferredAccessor=VisualStudio<br>
-
+-- Once VS solution is built, load VS solution and select main menu ->Build->Rebuild Solution
+-- Wait till done building
+-- Load aws polly project
 <br>
 
 
