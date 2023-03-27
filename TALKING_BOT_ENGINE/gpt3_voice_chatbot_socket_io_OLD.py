@@ -3,6 +3,7 @@ import time
 
 import io
 import os
+from _datetime import datetime;
 
 import asyncio
 import socketio
@@ -10,9 +11,7 @@ import random
 
 from pyVAD_utils import pyVAD
 from GoogleSpeechAPI import GoogleSpeech
-
-#from gpt3_chat_utils import ask , append_interaction_to_chat_log , chat_log
-from CHAT_GPT_utils import ask_chatGPT
+from gpt3_chat_utils import ask , append_interaction_to_chat_log , chat_log
 
 
 sio = socketio.AsyncClient()
@@ -47,7 +46,7 @@ async def main():
     speech = GoogleSpeech()
 
     #--- Steve etl VAD class    
-    py_VADx = pyVAD()
+    py_VAD_client = pyVAD()
 
     chat_log = ''
 
@@ -55,7 +54,7 @@ async def main():
 
     while True:
 
-        for wav_data in py_VADx.wave_loop():
+        for wav_data in py_VAD_client.wave_loop():
         
             #--- Send to Google and get speech to text 
             converted_text = speech.SpeechToText(wav_data)
@@ -63,12 +62,12 @@ async def main():
             #--- Noise sometimes comes back, so speech lib returns "Nothing" 
             if not converted_text == 'Nothing':
         
-                #answer = ask(converted_text, chat_log)
-                #chat_log = append_interaction_to_chat_log(converted_text, answer, chat_log)
-                chatgpt_response = ask_chatGPT(converted_text)
-                print(chatgpt_response)
+                answer = ask(converted_text, chat_log)
+                chat_log = append_interaction_to_chat_log(converted_text, answer, chat_log)
+                print(answer)
+                print(chat_log)
                 #say_this = f"say_{answer.strip()}"
-                say_this = f"say_{chatgpt_response}"
+                say_this = f"say_{answer}"
                 await sio.emit('chatMessage', say_this)
                 await sio.sleep(1) #random.randint(1, 3))
 
