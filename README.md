@@ -5,15 +5,14 @@
 -- This works for Unreal Engine 4.27 "only"<br>
 -- Install Visual Studio 2019 for C++/Games development<br>
 -- If using google speech to text then an active google api account<br>
--- Install cmake 3.18.0.rc1 then run the command line to build the aws sdk.<br>
+-- Install cmake 3.18.0.rc1 <br>
 -- Install "dotNet" component located here ----> https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.408-windows-x64-installer<br>
 -- Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019 like so<br>
 -----  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
 -----  PreferredAccessor=VisualStudio<br>
--- Save file<br>
 -- Run batch file located at ----> Source/AmazonPollyMetaHuman/ThirdParty/AwsSdk/BuildAwsSdkWin64.bat<br>
 -- Right click Unreal project and select "Build VS project files"<br>
--- Once VS solution is built, load VS solution and select main menu ->Build->Rebuild Solution<br>
+-- Once VS "solution file -- *.sln" apears, load VS solution and select main menu ->Build->Rebuild Solution<br>
 -- Wait till done building<br>
 -- Load aws polly project<br>
 <br>
