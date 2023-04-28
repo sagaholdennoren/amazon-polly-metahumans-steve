@@ -11,7 +11,7 @@
 -----  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
 -----  PreferredAccessor=VisualStudio<br>
 -- Save file
--- Run batch file located at ----> Source/AmazonPollyMetaHuman/ThirdParty/AwsSdk/BuildAwsSdkWin64.bat
+-- Run batch file located at ----> Source/AmazonPollyMetaHuman/ThirdParty/AwsSdk/BuildAwsSdkWin64.bat<br>
 -- Right click Unreal project and select "Build VS project files"<br>
 -- Once VS solution is built, load VS solution and select main menu ->Build->Rebuild Solution
 -- Wait till done building
