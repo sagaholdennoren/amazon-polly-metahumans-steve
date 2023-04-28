@@ -10,12 +10,12 @@
 -- Change your "Config/DefaultEditorSettings.ini" to use Visual Studio 2019 like so<br>
 -----  [/Script/SourceCodeAccess.SourceCodeAccessSettings]<br>
 -----  PreferredAccessor=VisualStudio<br>
--- Save file
+-- Save file<br>
 -- Run batch file located at ----> Source/AmazonPollyMetaHuman/ThirdParty/AwsSdk/BuildAwsSdkWin64.bat<br>
 -- Right click Unreal project and select "Build VS project files"<br>
--- Once VS solution is built, load VS solution and select main menu ->Build->Rebuild Solution
--- Wait till done building
--- Load aws polly project
+-- Once VS solution is built, load VS solution and select main menu ->Build->Rebuild Solution<br>
+-- Wait till done building<br>
+-- Load aws polly project<br>
 <br>
 
 
